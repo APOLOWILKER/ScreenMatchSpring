@@ -1,4 +1,8 @@
 package br.com.alura.screenmatchspring.model;
 
-public record DadosSerie(String title, Integer totalTemporadas, String avaliacao) {
+import com.fasterxml.jackson.annotation.JsonAlias;
+
+public record DadosSerie(@JsonAlias("title") String titulo,
+                         @JsonAlias("totalSeasons") Integer totalTemporadas,
+                         @JsonAlias("imdbRating") String avaliacao) {
 }
