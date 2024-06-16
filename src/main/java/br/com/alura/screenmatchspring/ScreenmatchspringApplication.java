@@ -21,7 +21,7 @@ public class ScreenmatchspringApplication implements CommandLineRunner {
 		var json = requestManager.getData("https://www.omdbapi.com/?t=gilmore+girls&season=1&apikey=4eb6c41b");
 		System.out.println(json);
 
-		json = requestManager.getData("https://coffee.alexflipnote.dev/random.json");
-		System.out.println(json);
+//		json = requestManager.getData("https://coffee.alexflipnote.dev/random.json");
+//		System.out.println(json);
 	}
 }
